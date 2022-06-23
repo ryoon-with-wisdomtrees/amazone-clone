@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="header">
       <img
-        src="https://pngimg.com/uploads/amazone/amazone_PNG11.png"
+        src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
         className="header__logo"
         alt=""
       />
