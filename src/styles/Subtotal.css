@@ -1,0 +1,23 @@
+.subtotal {
+  display: flex;
+  flex-direction: column; /** 세로로 주욱 하강. 열로*/
+  justify-content: space-between; /** flex된 아이템들간 간격 일정하게. 메인 axix를 따라서. */
+  /**Aligns flex items along the main axis of the current line of the flex container.*/
+  width: 300px;
+  height: 100px;
+  padding: 20px; /** 내부로 -> <-*/
+  /**margin: 10px; /** 외부로 <-->*/
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+.subtotal__gift {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subtotal > input {
+  margin-right: 5px;
+}
