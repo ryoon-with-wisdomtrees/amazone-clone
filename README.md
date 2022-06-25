@@ -8,7 +8,7 @@
 
 ### 참고 자료
 
-- [https://velog.io/@hoon_dev/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0Route-Link-Switch-5](리액트 라우터 이해하기)
+-(리액트 라우터 이해하기)[https://velog.io/@hoon_dev/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0Route-Link-Switch-5]
 
 ### 바뀐부분
 
