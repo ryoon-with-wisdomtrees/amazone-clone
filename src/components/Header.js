@@ -2,11 +2,21 @@ import React from "react";
 import "../styles/Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import { Link } from "@mui/material";
+//import { Link } from "@mui/material";
+import { useStateValue } from "./StateProvider";
+import { Link } from "react-router-dom";
+
 function Header() {
+  // const [state, dispatch] = useStateValue();
+  // console.log("state:", state);
+  // header에서 보내는거 없으니까 dispatch 없애고
+  // 구조분해화 할당으로 basket만 state에서 꺼내오기
+  const [{ basket }] = useStateValue();
+  // console.log("basket, ", basket);
+
   return (
     <div className="header">
-      <Link href="/">
+      <Link to="/">
         <img
           src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
           className="header__logo"
@@ -32,10 +42,14 @@ function Header() {
           <span className="header__optionLine1">Your</span>
           <span className="header__optionLine2">Prime</span>
         </div>
-        <Link href="/checkout">
+        <Link to="/checkout">
           <div className="header__optionsBasket">
             <ShoppingBasketIcon />
-            <span className="header__optionLine2 header__basketCount">0</span>
+            <span className="header__optionLine2 header__basketCount">
+              {/* {basket?.length} */}
+              {/** 옵셔널 체이닝 연산자. null을 참조해도 error대신 undefined 반환*/}
+              {basket.length ?? "0"}
+            </span>
           </div>
         </Link>
       </div>
