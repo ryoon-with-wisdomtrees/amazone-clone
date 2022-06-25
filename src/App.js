@@ -2,24 +2,18 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import { Router } from "react-router-dom";
-import { Route } from "react-router";
-import Swit
-import { Switch } from "@mui/material";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Switch>
-          <Route path="/checkout">
-            <Header />
-            <h1> Header desue</h1>
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Header /> {/** 고정 값 셋팅 */}
+        <Routes>
+          <Route path="/checkout" element={<Checkout />}></Route>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
       </div>
     </Router>
   );

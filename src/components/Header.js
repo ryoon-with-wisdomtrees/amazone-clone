@@ -2,14 +2,17 @@ import React from "react";
 import "../styles/Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import { Link } from "@mui/material";
 function Header() {
   return (
     <div className="header">
-      <img
-        src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        className="header__logo"
-        alt=""
-      />
+      <Link href="/">
+        <img
+          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          className="header__logo"
+          alt=""
+        />
+      </Link>
       <div className="header__search">
         <input type="text" className="header__searchInput" />
         <SearchIcon className="header__searchIcon" />
