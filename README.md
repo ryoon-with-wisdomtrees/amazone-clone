@@ -14,6 +14,7 @@
 - [react-currency-format is not installing, how to fix it?](https://stackoverflow.com/questions/66291961/react-currency-format-is-not-installing-how-to-fix-it)\
 - [Link](https://reactrouter.com/docs/en/v6/components/link)
 - [flex-direction](https://developer.mozilla.org/ko/docs/Web/CSS/flex-direction)
+- [<Routes> must be a <Route> or <React.Fragment>](https://stackoverflow.com/questions/69864165/error-privateroute-is-not-a-route-component-all-component-children-of-rou)
 
 ### 바뀐부분(2022.07 기준)
 
